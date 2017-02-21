@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="VAIO"
   DTS:CreatorName="VAIO\Manish"
-  DTS:DTSID="{8F56C4D5-3C40-48D8-A12D-FC2FAC70C0E4}"
+  DTS:DTSID="{3E7A6DD4-7718-41FF-AFE3-EA596EE5B371}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="13.0.4001.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="CopyFileRenamePackageFileTask"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{FF1FD253-EDD0-426D-936A-90C26582FC42}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{0269FE67-5AA9-403B-9EF4-D2B790F96C0A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[archive]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{B1E369E6-F78A-4645-B3CB-1B652F39E68C}"
+      DTS:DTSID="{D53EFF09-C0C5-442B-ADEA-615008ADA6CF}"
       DTS:ObjectName="archive">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -31,7 +31,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F0682B65-57EB-4E9D-B27E-AD95990C0280}"
+      DTS:DTSID="{98766CA5-5047-4836-A673-6B4FC35DAEA5}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Archive">
@@ -40,7 +40,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{49AE8EA3-67EB-4C83-80E0-8B8DB5C0E6CE}"
+      DTS:DTSID="{9590952D-285D-4688-9128-7F6C86B21C25}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="(DT_STR, 4 , 1252)DATEPART( &quot;year&quot; , GETDATE() ) + &quot;&quot; + RIGHT( &quot;00&quot; + (DT_STR, 2 , 1252)DATEPART( &quot;month&quot; , GETDATE() ) , 2 ) + &quot;&quot; + RIGHT( &quot;00&quot; + (DT_STR, 2 , 1252)DATEPART( &quot;day&quot; , GETDATE() ) , 2 )"
       DTS:IncludeInDebugDump="2345"
@@ -51,38 +51,38 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{603E51F8-9E21-4EFA-B76F-77C1677F0916}"
+      DTS:DTSID="{050B78E2-D07C-4007-82AE-91660EA54E85}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FileValue">
       <DTS:VariableValue
-        DTS:DataType="8">*.*</DTS:VariableValue>
+        DTS:DataType="8">abc.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{536742DC-EA7C-4451-BE6C-0DE1468A4585}"
+      DTS:DTSID="{02F55F6F-BC86-4AF2-8D1E-9919B997A190}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::Archive]+ @[User::DateName] +@[User::FileValue]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FullArchivePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\temp\archive\20170218*.*</DTS:VariableValue>
+        DTS:DataType="8">C:\temp\archive\20170218abc.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ACEE8B99-0B05-4946-AC05-B7FE43D08FEF}"
+      DTS:DTSID="{A5FE5317-DA97-4297-8E3E-C94B65FBF667}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::Source]+ @[User::FileValue]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FullSourcePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\temp\source\*.*</DTS:VariableValue>
+        DTS:DataType="8">C:\temp\source\abc.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{25010982-7D1A-4223-97E6-9DCE4D775B9D}"
+      DTS:DTSID="{B710310E-580D-43B5-8714-3E0F390BD285}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Source">
@@ -95,14 +95,14 @@
       DTS:refId="Package\Sequence Container for renaming destination files"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{C1302ED6-BF16-4DD4-9D9A-1B905DA647A4}"
+      DTS:DTSID="{AD40AB6A-2369-498D-B82A-F7895075041E}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container for renaming destination files">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{47C038FD-2CC8-4C20-9B58-DFC5F9CF76A5}"
+          DTS:DTSID="{93BE1BBA-FFDA-4548-B60D-8F4DB522CA83}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="VariableSequence">
@@ -115,12 +115,12 @@
           DTS:refId="Package\Sequence Container for renaming destination files\File System Task"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="File System Task"
-          DTS:DTSID="{E0BF3614-DE28-4834-B521-F9D6F5FD2832}"
+          DTS:DTSID="{92F7E592-A901-44E2-9013-8A94F4BA6C54}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="File System Task"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -137,14 +137,14 @@
       DTS:refId="Package\Sequence Container Moves Source Folder Files to the Destination Folder"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{CF0FB85F-2CFE-4F0D-B4EC-2488FD923C77}"
+      DTS:DTSID="{19250725-BA00-4534-8897-E229F623EBEE}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container Moves Source Folder Files to the Destination Folder">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{8AF48A47-539A-4A3D-8796-1927593D4201}"
+          DTS:DTSID="{F45715F8-12F0-44D6-8AFE-42FCBC408E55}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="VariableFilesToMove">
@@ -157,14 +157,14 @@
           DTS:refId="Package\Sequence Container Moves Source Folder Files to the Destination Folder\Foreach Loop Container Loops through each file in the source folder"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Foreach Loop Container"
-          DTS:DTSID="{FC89F26E-177C-4E16-B5F9-BAC6B415D765}"
+          DTS:DTSID="{798553D5-A602-469E-B11D-67E1A86D67A2}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Foreach Loop Container Loops through each file in the source folder">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{3FACE6B3-5A3D-4FC1-8A32-2F00F88E0E7A}"
-            DTS:ObjectName="{3FACE6B3-5A3D-4FC1-8A32-2F00F88E0E7A}">
+            DTS:DTSID="{85843807-BED8-41DB-BEE9-5EF3B0B83285}"
+            DTS:ObjectName="{85843807-BED8-41DB-BEE9-5EF3B0B83285}">
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
@@ -184,7 +184,7 @@
               DTS:refId="Package\Sequence Container Moves Source Folder Files to the Destination Folder\Foreach Loop Container Loops through each file in the source folder\File System Task Moves source files to destination"
               DTS:CreationName="Microsoft.FileSystemTask"
               DTS:Description="File System Task"
-              DTS:DTSID="{A71CE26D-6BA3-4842-B560-E81EA62B6736}"
+              DTS:DTSID="{CB0697F5-0BDB-4304-8D61-623EB57C1F69}"
               DTS:ExecutableType="Microsoft.FileSystemTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="File System Task Moves source files to destination"
@@ -193,20 +193,18 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <FileSystemData
-                  TaskOperationType="RenameFile"
                   TaskOverwriteDestFile="True"
-                  TaskSourcePath="User::FullSourcePath"
+                  TaskSourcePath="User::VariableFilesToMove"
                   TaskIsSourceVariable="True"
-                  TaskDestinationPath="User::FullArchivePath"
-                  TaskIsDestinationVariable="True" />
+                  TaskDestinationPath="archive" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{F58BBB1B-EE1A-44C5-B619-3A3DAC0B67F8}"
-              DTS:ObjectName="{F58BBB1B-EE1A-44C5-B619-3A3DAC0B67F8}"
+              DTS:DTSID="{27EECEF2-ED50-4CFC-8053-BBFD9EBD208D}"
+              DTS:ObjectName="{27EECEF2-ED50-4CFC-8053-BBFD9EBD208D}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::VariableFilesToMove" />
           </DTS:ForEachVariableMappings>
@@ -214,6 +212,16 @@
       </DTS:Executables>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{23C6F243-3ACE-42F8-88A9-EF21C7A30569}"
+      DTS:From="Package\Sequence Container Moves Source Folder Files to the Destination Folder"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Sequence Container for renaming destination files" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -225,7 +233,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\Sequence Container for renaming destination files\File System Task"
@@ -255,6 +263,28 @@
           Size="441.6,280"
           Id="Package\Sequence Container Moves Source Folder Files to the Destination Folder"
           TopLeft="64.5714296710736,20.8000002917121" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="288.114287310231,300.800000291712">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,27.4823570852049"
+              Start="0,0"
+              End="0,19.9823570852049">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.9823570852049" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
