@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VAIO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVMrdHYZ3H0GIBdgzWbO0zwAAAAACAAAAAAAQZgAAAAEAACAAAABXuDRlXqsbEkY6/mOOiiLSOvNvZIy4oe8jNpdUTfzttQAAAAAOgAAAAAIAACAAAACRxNH6jzgh6GvAq3YG+8xGgGaulu/gZZe//EVnpZ9mppAAAAB1fAAQcOiiZRMXDNHB/JCL+xT3B0Wq1AwnYP9FM745bItUfYHbcn+w7RHDaqOF4Z8v3bHhFDoxrJ3GYz1e7ITCQYJHHT5SGB7jrDMg1V6yc3sYjua/tX+i3aXWg5T1miGFNN6dWNzNtYo/8dTSwTWlZShyjNmQJOPqLve7CsNWkc57sTI48bE5ApBaAl2D7tZAAAAAiKfoc3WuSuXyiAM+vaLnf1KykTBGsXhfx1XuDEEwTvbLopoyMobRy2BTBq5tM8Nax8av9L0Hus0rbH3yHMHL8w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVMrdHYZ3H0GIBdgzWbO0zwAAAAACAAAAAAAQZgAAAAEAACAAAAAuEMdNh+LgscI1z5zu3WiqIKFz5tbl58vLhlEKbAD/1AAAAAAOgAAAAAIAACAAAAAwSN2keHvINplemrF9OaNGHGc7J2bBY2ZtT3IDS2nuf5AAAADGPr7gzeh4JB9P0ZOkI54LK4eQZUnVQtvnDn/juzXsqz33+FHTHU1MEzj00tDUxr8ygG1tTIMp451oTrNMfN6ElJPVxFRwOrB561iD23OA4fp695iLEbOxySbJioclyhqA1UbC9yi6FsWia7OAkCRJSNuqZTF3Y6Z/97pgcQvgTbIFvowNILs5ivFq5Ih4SKJAAAAAGmU09pqGaXmqS0mgvUbVNIa3RfmdDdk1S8KvlIk/IsyqBRDlrKUMQMvfD5UTcPbqNWa2LXdRSUlBMc7BsCFgYw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -76,10 +76,10 @@
                 <SSIS:Property SSIS:Name="Name">CopyFileRenamePackageScriptTask</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3719D8FE-C7B1-42B0-B4D5-D5893897C74A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DE457588-1CFE-4F64-8ED3-6975C5019264}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -98,6 +98,36 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">C:\temp\archive</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.archive 1.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\temp\archive</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.New folder.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\temp\archive\New folder</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
